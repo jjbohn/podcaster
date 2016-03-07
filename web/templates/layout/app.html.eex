@@ -1,35 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Required meta tags always come first -->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="John Bohn">
 
-    <title>Hello Podcaster!</title>
+    <title>State of Development Podcast with John Bohn</title>
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
   </head>
 
   <body>
-    <div class="container">
-      <header class="header">
-        <nav role="navigation">
-          <ul class="nav nav-pills pull-right">
-            <li><a href="http://www.phoenixframework.org/docs">Get Started</a></li>
-          </ul>
-        </nav>
-        <span class="logo"></span>
-      </header>
+    <nav class="navbar navbar-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">State of Development Podcast</a>
+        <ul class="nav navbar-nav pull-xs-right">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Library</a>
+          </li>
 
-      <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
-      <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
 
-      <main role="main">
-        <%= render @view_module, @view_template, assigns %>
-      </main>
-
-    </div> <!-- /container -->
+          <li class="nav-item">
+            <a class="nav-link" href="#">Subscribe</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main role="main" id="main">
+      <!-- http://themeforest.net/item/podcaster-multimedia-wordpress-theme/full_screen_preview/6804946 -->
+    </main>
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
   </body>
 </html>
