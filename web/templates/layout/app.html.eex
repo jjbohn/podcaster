@@ -16,65 +16,9 @@
 
   <body>
     <main role="main" id="main">
-      <nav class="navbar navbar--fixed_top">
-        <div class="container">
-          <a class="navbar__title" href="#">State of Development Podcast with John Bohn</a>
-          <ul class="navbar__nav">
-            <li class="navbar__dropdown">
-              <a class="navbar__dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                Follow
-              </a>
-              <div class="navbar__dropdown-menu" aria-labelledby="Follow">
-                <a class="navbar__dropdown-item" href="https://twitter.com/jjbohn">Twitter</a>
-                <a class="navbar__dropdown-item" href="https://www.facebook.com/stateofdevelopmentpodcast/">Facebook</a>
-              </div>
-            </li>
-
-            <li class="navbar__dropdown">
-              <a class="navbar__dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                Subscribe
-              </a>
-              <div class="navbar__dropdown-menu" aria-labelledby="Preview">
-                <a class="navbar__dropdown-item" href="https://itunes.apple.com/us/podcast/state-development-podcast/id1089601796">Subscribe with iTunes</a>
-                <a class="navbar__dropdown-item" href="http://www.stitcher.com/podcast/state-of-development-with-john-bohn/state-of-development-podcast-with-john-bohn">Subscribe with Stitcher</a>
-                <a class="navbar__dropdown-item" href="https://simplecast.com/podcasts/1739/rss">Subscribe with RSS</a>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <section class="hero_player">
-        <div class="hero_player__content">
-          <div class="hero_player__logo">
-            <img class="hero_player__logo-image" alt="" src="/images/logo.jpg">
-          </div>
-          <div class="hero_player__controls">
-            <h4 class="hero_player__featured_episode">Featured Episode</h4>
-            <h2 class="hero_player__title">Microservices &amp; Monoliths</h2>
-            <p>This week John talks about Microservices, Monoliths, Conferences, Rust, Ruby and more.</p>
-            <iframe frameborder='0' height='36px' scrolling='no' seamless src='https://simplecast.com/e/28368?style=light' width='100%'></iframe>
-            <a class="btn btn-primary" href="https://itunes.apple.com/us/podcast/state-development-podcast/id1089601796" role="button">Subscribe with iTunes</a>
-            <a class="btn btn-primary" href="https://simplecast.com/podcasts/1739/rss" role="button">Subscribe with RSS</a>
-          </div>
-        </div>
-      </section>
-      <section class="episode_list">
-        <div class="episode_list__container">
-          <div class="episode_list__episode">
-            <h3 class="episode_list__episode_title">2: Microservices & Monoliths</h3>
-            <p class="episode_list__episode_description">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <iframe frameborder='0' height='36px' scrolling='no' seamless src='https://simplecast.com/e/28368?style=light' width='100%'></iframe>
-          </div>
-
-          <div class="episode_list__episode">
-            <h3 class="episode_list__episode_title">1: Career advice for older devs, evolutionary programming, upcoming conferences</h3>
-            <p class="episode_list__episode_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <iframe frameborder='0' height='36px' scrolling='no' seamless src='https://simplecast.com/e/27911?style=light' width='100%'></iframe>
-          </div>
-        </div>
-      </section>
+      <%= render "_nav.html" %>
+      <%= render Podcaster.EpisodeView, "_featured_episode.html", assigns %>
+      <%= render @view_module, @view_template, assigns %>
     </main>
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
   </body>

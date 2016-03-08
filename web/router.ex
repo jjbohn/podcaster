@@ -16,7 +16,15 @@ defmodule Podcaster.Router do
   scope "/", Podcaster do
     pipe_through :browser # Use the default browser stack
 
-    get "/", PageController, :index
+    get "/", EpisodeController, :index
+
+    get "/itunes", QuickLinkController, :itunes
+    get "/rss", QuickLinkController, :rss
+    get "/stitcher", QuickLinkController, :stitcher
+    get "/twitter", QuickLinkController, :twitter
+    get "/facebook", QuickLinkController, :facebook
+
+    get "/:episode_id", EpisodeController, :show
   end
 
   # Other scopes may use custom stacks.

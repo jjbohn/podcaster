@@ -1,0 +1,20 @@
+
+<section class="episode_list">
+  <div class="episode_list__container">
+    <article class="episode_list__episode">
+      <h3 class="episode_list__episode_title">
+        <a class="episode_list__episode_title_link" href="#"><%= @episode["number"] %>: <%= @episode["title"] %></a>
+      </h3>
+      <p class="episode_list__episode_description">
+        <%= @episode["description"] %>
+      </p>
+
+      <iframe frameborder='0' height='36px' scrolling='no' seamless src='https://simplecast.com/e/<%= @episode["id"] %>?style=light' width='100%'></iframe>
+
+      <div class="episode_list__episode_show_notes">
+        <h3>Show notes</h3>
+        <%= raw Earmark.to_html(@episode["long_description"]) %>
+      </div>
+    </article>
+  </div>
+</section>

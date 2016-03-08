@@ -8,12 +8,3 @@ config :podcaster, Podcaster.Endpoint,
 
 # Print only warnings and errors during test
 config :logger, level: :warn
-
-# Configure your database
-config :podcaster, Podcaster.Repo,
-  adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
-  database: "podcaster_test",
-  hostname: "localhost",
-  pool: Ecto.Adapters.SQL.Sandbox

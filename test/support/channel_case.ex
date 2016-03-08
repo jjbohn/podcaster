@@ -21,9 +21,6 @@ defmodule Podcaster.ChannelCase do
       use Phoenix.ChannelTest
 
       alias Podcaster.Repo
-      import Ecto
-      import Ecto.Changeset
-      import Ecto.Query, only: [from: 1, from: 2]
 
 
       # The default endpoint for testing

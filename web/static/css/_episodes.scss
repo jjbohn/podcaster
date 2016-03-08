@@ -13,3 +13,23 @@
   padding: $spacer-y $spacer-x;
   background-color: white;
 }
+
+.episode_list__episode_title {
+  width: 100%;
+  color: $brand-primary;
+}
+
+.episode_list__episode_title_link {
+  width: 100%;
+  color: $brand-primary;
+}
+
+.episode_list__episode_description {
+  width: 100%;
+  margin: $spacer-y 0;
+}
+
+.episode_list__episode_show_notes{
+  margin: ($spacer-y * 4) 0;
+  font-size: 90%;
+}

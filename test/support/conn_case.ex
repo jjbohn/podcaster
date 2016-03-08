@@ -21,9 +21,6 @@ defmodule Podcaster.ConnCase do
       use Phoenix.ConnTest
 
       alias Podcaster.Repo
-      import Ecto
-      import Ecto.Changeset
-      import Ecto.Query, only: [from: 1, from: 2]
 
       import Podcaster.Router.Helpers
 
@@ -33,10 +30,6 @@ defmodule Podcaster.ConnCase do
   end
 
   setup tags do
-    unless tags[:async] do
-      Ecto.Adapters.SQL.restart_test_transaction(Podcaster.Repo, [])
-    end
-
     {:ok, conn: Phoenix.ConnTest.conn()}
   end
 end

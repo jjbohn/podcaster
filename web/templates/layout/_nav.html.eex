@@ -1,0 +1,27 @@
+<nav class="navbar navbar--fixed_top">
+  <div class="container">
+    <a class="navbar__title" href="/">State of Development Podcast with John Bohn</a>
+    <ul class="navbar__nav">
+      <li class="navbar__dropdown">
+        <a class="navbar__dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+          Follow
+        </a>
+        <div class="navbar__dropdown-menu" aria-labelledby="Follow">
+          <a class="navbar__dropdown-item" href="/twitter" target="blank">Twitter</a>
+          <a class="navbar__dropdown-item" href="/facebook" target="blank">Facebook</a>
+        </div>
+      </li>
+
+      <li class="navbar__dropdown">
+        <a class="navbar__dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+          Subscribe
+        </a>
+        <div class="navbar__dropdown-menu" aria-labelledby="Preview">
+          <a class="navbar__dropdown-item" href="/itunes" target="blank">Subscribe with iTunes</a>
+          <a class="navbar__dropdown-item" href="/stitcher" target="blank">Subscribe with Stitcher</a>
+          <a class="navbar__dropdown-item" href="/rss" target="blank">Subscribe with RSS</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>

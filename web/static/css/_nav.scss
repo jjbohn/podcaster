@@ -2,6 +2,10 @@
   background-color: #f1bf56;
 }
 
+.navbar a {
+  color: $brand-primary;
+}
+
 .navbar__nav {
   @extend .nav
 }
@@ -12,6 +16,7 @@
 
 .navbar__title {
   @extend .navbar-brand;
+  color: $brand-primary;
 }
 
 .navbar__dropdown {

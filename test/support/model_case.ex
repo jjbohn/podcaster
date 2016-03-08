@@ -18,9 +18,6 @@ defmodule Podcaster.ModelCase do
     quote do
       alias Podcaster.Repo
 
-      import Ecto
-      import Ecto.Changeset
-      import Ecto.Query, only: [from: 1, from: 2]
       import Podcaster.ModelCase
     end
   end

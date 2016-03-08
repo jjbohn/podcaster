@@ -1,0 +1,18 @@
+<section class="hero_player">
+  <div class="hero_player__content">
+    <div class="hero_player__logo">
+      <img class="hero_player__logo-image" alt="" src="/images/logo.jpg">
+    </div>
+    <div class="hero_player__controls">
+      <h4 class="hero_player__featured_episode">Featured Episode</h4>
+      <h2 class="hero_player__title">
+        <%= @featured_episode["title"] %>
+      </h2>
+      <p><%= @featured_episode["description"] %></p>
+      <p><a href="<%= episode_path(@conn, :show, @featured_episode["number"]) %>">Show notes</a></p>
+      <iframe frameborder='0' height='36px' scrolling='no' seamless src='https://simplecast.com/e/<%= @featured_episode["id"] %>?style=light' width='100%'></iframe>
+      <a class="btn btn-primary" href="/itunes" role="button" target="blank">Subscribe with iTunes</a>
+      <a class="btn btn-primary" href="/rss" role="button" target="blank">Subscribe with RSS</a>
+    </div>
+  </div>
+</section>
