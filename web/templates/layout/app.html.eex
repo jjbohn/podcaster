@@ -5,10 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="">
+    <meta name="description" content="Need to know what's going on in the world of software development? Join John as he takes you through the week's programming/software development news.">
     <meta name="author" content="John Bohn">
 
-    <title>State of Development Podcast with John Bohn</title>
+    <title>State of Development Podcast with John Bohn | Software Development | Programming | News</title>
     <link rel="alternate" type="application/rss+xml" title="State of Development Podcast with John Bohn | Software Development | Programming | News RSS" href="http://simplecast.com/podcasts/1739/rss">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
