@@ -1,0 +1,56 @@
+.navbar {
+  background-color: #f1bf56;
+}
+
+.navbar__nav {
+  @extend .nav
+}
+
+.navbar--fixed_top {
+  @extend .fixed_top;
+}
+
+.navbar__title {
+  @extend .navbar-brand;
+}
+
+.navbar__dropdown {
+  @extend .nav-item;
+  @extend .dropdown;
+}
+
+.navbar__dropdown-menu {
+  @extend .dropdown-menu;
+}
+
+.navbar__dropdown-item {
+  @extend .dropdown-item;
+  margin-left: 0 !important;
+}
+
+.navbar__dropdown-toggle {
+  @extend .nav-link;
+  @extend .dropdown-toggle;
+}
+
+.navbar__dropdown-menu {
+  @extend .dropdown-menu;
+}
+
+.navbar__dropdown-item {
+  @extend .nav-item;
+  @extend .dropdown-item;
+}
+
+.navbar__nav {
+  @extend .navbar-nav;
+  @extend .pull-xs-right;
+}
+
+.navbar__item {
+  @extend .nav-item;
+}
+
+.navbar__item-link {
+  @extend .nav-link;
+}

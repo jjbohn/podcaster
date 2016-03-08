@@ -1,0 +1,15 @@
+.episode_list {
+  background-color: $gray-lighter;
+}
+
+.episode_list__container {
+  @extend .container;
+  padding: ($spacer-y / 2) 0;
+}
+
+.episode_list__episode {
+  @extend .row;
+  margin: $spacer-y * 2 0;
+  padding: $spacer-y $spacer-x;
+  background-color: white;
+}

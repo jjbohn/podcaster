@@ -1,0 +1,25 @@
+.hero_player {
+  padding: $spacer-y 0;
+  @extend .container;
+}
+
+.hero_player__content {
+  @extend .row;
+}
+
+.hero_player__logo {
+  @extend .col-md-4;
+}
+
+.hero_player__featured_episode {
+  color: $gray-light;
+}
+
+.hero_player__logo-image {
+  width: 300px;
+  height: 300px;
+}
+
+.hero_player__controls {
+  @extend .col-md-8;
+}
