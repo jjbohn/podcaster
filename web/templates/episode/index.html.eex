@@ -10,7 +10,7 @@
         <p class="episode_list__episode_description">
           <%= episode["description"] %>
         </p>
-        <p><a href="#">Show notes</a></p>
+        <p><a href="<%=episode_path(@conn, :show, episode["number"]) %>">Show notes</a></p>
         <iframe frameborder='0' height='36px' scrolling='no' seamless src='https://simplecast.com/e/<%= episode["id"] %>?style=light' width='100%'></iframe>
       </article>
     <% end %>
