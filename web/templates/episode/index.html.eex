@@ -4,7 +4,7 @@
       <article class="episode_list__episode">
         <h3 class="episode_list__episode_title">
           <a class="episode_list__episode_title_link" href="<%= episode_path(@conn, :show, episode["number"]) %>">
-            <%= episode["number"] %>: <%= episode["title"] %>
+            Episode <%= episode["number"] %>: <%= episode["title"] %>
           </a>
         </h3>
         <p class="episode_list__episode_description">
