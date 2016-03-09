@@ -29,3 +29,7 @@ $(".trk__follow-twitter").click(() => {
 $(".trk__follow-facebook").click(() => {
   ga("send", "event", ["Social"], ["Follow"], ["Facbook"])
 });
+
+$(".trk__email_sign_up").click(() => {
+  ga("send", "event", ["Mailing List"], ["Subscribe"])
+});

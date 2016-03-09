@@ -21,5 +21,12 @@
       <%= render @view_module, @view_template, assigns %>
     </main>
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
+    <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+    <script type="text/javascript">
+     document.getElementsByClassName("js__email_sign_up")[0].onclick = () => {
+       require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us1.list-manage.com","uuid":"60ff1f06e1ad5abc0846226a9","lid":"591da659fd"}) })
+         document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+     };
+    </script>
   </body>
 </html>
