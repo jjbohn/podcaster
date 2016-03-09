@@ -7,8 +7,8 @@
           Follow
         </a>
         <div class="navbar__dropdown-menu" aria-labelledby="Follow">
-          <a class="navbar__dropdown-item" href="/twitter" target="blank">Twitter</a>
-          <a class="navbar__dropdown-item" href="/facebook" target="blank">Facebook</a>
+          <a class="navbar__dropdown-item trk__follow-twitter" href="/twitter" target="blank">Twitter</a>
+          <a class="navbar__dropdown-item trk__follow-facebook" href="/facebook" target="blank">Facebook</a>
         </div>
       </li>
 
@@ -17,9 +17,9 @@
           Subscribe
         </a>
         <div class="navbar__dropdown-menu" aria-labelledby="Preview">
-          <a class="navbar__dropdown-item" href="/itunes" target="blank">Subscribe with iTunes</a>
-          <a class="navbar__dropdown-item" href="/stitcher" target="blank">Subscribe with Stitcher</a>
-          <a class="navbar__dropdown-item" href="/rss" target="blank">Subscribe with RSS</a>
+          <a class="navbar__dropdown-item trk__subscribe-with-itunes" href="/itunes" target="blank">Subscribe with iTunes</a>
+          <a class="navbar__dropdown-item trk__subscribe-with-stitcher" href="/stitcher" target="blank">Subscribe with Stitcher</a>
+          <a class="navbar__dropdown-item trk__subscribe-with-rss" href="/rss" target="blank">Subscribe with RSS</a>
         </div>
       </li>
     </ul>

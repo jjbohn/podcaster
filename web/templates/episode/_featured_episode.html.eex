@@ -11,8 +11,8 @@
       <p><%= @featured_episode["description"] %></p>
       <p><a href="<%= episode_path(@conn, :show, @featured_episode["number"]) %>">Show notes</a></p>
       <iframe frameborder='0' height='36px' scrolling='no' seamless src='https://simplecast.com/e/<%= @featured_episode["id"] %>?style=light' width='100%'></iframe>
-      <a class="btn btn-primary" href="/itunes" role="button" target="blank">Subscribe with iTunes</a>
-      <a class="btn btn-primary" href="/rss" role="button" target="blank">Subscribe with RSS</a>
+      <a class="btn btn-primary trk__subscribe-with-itunes" href="/itunes" role="button" target="blank">Subscribe with iTunes</a>
+      <a class="btn btn-primary trk__subscribe-with-rss" href="/rss" role="button" target="blank">Subscribe with RSS</a>
     </div>
   </div>
 </section>
