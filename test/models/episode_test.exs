@@ -15,8 +15,12 @@ defmodule EpisodeTest do
   use ExUnit.Case, async: true
 
   test "can be transformed to JSON" do
-    assert ~s({"title":"Episode 1","number":"1","long_descriptio
+    assert ~s({"title":"Episode 1","number":"1","long_description":"Long description","id":"asdf-fdsa","episode_id":"1234","description":"Description"})
+    == Poison.encode!(%Episode{title: "Episode 1",
                                number: "1",
+                               description: "Description",
+                               long_description: "Long description",
+                               episode_id: "1234",
                                id: "asdf-fdsa"})
   end
 
