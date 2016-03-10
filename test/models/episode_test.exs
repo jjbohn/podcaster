@@ -8,10 +8,6 @@ defmodule EpisodeTest do
     end
   end
 
-  defmodule Person do
-    defstruct [:name, :age]
-  end
-
   use ExUnit.Case, async: true
 
   test "can be transformed to JSON" do
