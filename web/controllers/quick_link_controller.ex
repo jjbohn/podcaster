@@ -7,7 +7,7 @@ defmodule Podcaster.QuickLinkController do
 
   def rss(conn, _params) do
     {:ok, response} = HTTPoison.get("https://simplecast.com/podcasts/1739/rss")
-    render conn
+    conn
     |> put_resp_content_type("text/xml")
     |> text response.body
   end
