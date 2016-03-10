@@ -9,7 +9,7 @@ defmodule Podcaster.QuickLinkController do
     {:ok, response} = HTTPoison.get("https://simplecast.com/podcasts/1739/rss")
     conn
     |> put_resp_content_type("text/xml")
-    |> text response.body
+    |> text(response.body)
   end
 
   def stitcher(conn, _params) do

@@ -3,15 +3,15 @@
     <%= for episode <- @episodes do %>
       <article class="episode_list__episode">
         <h3 class="episode_list__episode_title">
-          <a class="episode_list__episode_title_link" href="<%= episode_path(@conn, :show, episode["number"]) %>">
-            Episode <%= episode["number"] %>: <%= episode["title"] %>
+          <a class="episode_list__episode_title_link" href="<%= episode_path(@conn, :show, episode.number) %>">
+            Episode <%= episode.number %>: <%= episode.title %>
           </a>
         </h3>
         <p class="episode_list__episode_description">
-          <%= episode["description"] %>
+          <%= episode.description %>
         </p>
-        <p><a href="<%=episode_path(@conn, :show, episode["number"]) %>">Show notes</a></p>
-        <iframe frameborder='0' height='36px' scrolling='no' seamless src='https://simplecast.com/e/<%= episode["id"] %>?style=light' width='100%'></iframe>
+        <p><a href="<%=episode_path(@conn, :show, episode.number) %>">Show notes</a></p>
+        <iframe frameborder='0' height='36px' scrolling='no' seamless src='https://simplecast.com/e/<%= episode.id %>?style=light' width='100%'></iframe>
       </article>
     <% end %>
   </div>
