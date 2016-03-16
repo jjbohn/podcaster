@@ -6,6 +6,12 @@ defmodule Episode do
     :long_description,
     :number,
     :title,
+    :publish_at,
+    :guid,
+    :audio_url,
+    :audio_file_size,
+    :duration,
+    :keywords,
   ]
 
   def all(api \\ Simplecast) do

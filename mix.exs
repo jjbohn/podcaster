@@ -18,7 +18,7 @@ defmodule Podcaster.Mixfile do
   def application do
     [mod: {Podcaster, []},
      applications: [:phoenix, :phoenix_html, :cowboy, :logger,
-                    :gettext, :postgrex, :httpoison]]
+                    :gettext, :postgrex, :httpoison, :timex]]
   end
 
   # Specifies which paths to compile per environment.
@@ -37,6 +37,7 @@ defmodule Podcaster.Mixfile do
      {:cowboy, "~> 1.0"},
      {:httpoison, "~> 0.8.1"},
      {:poison, "~> 2.0"},
-     {:earmark, "~> 0.2.0"}]
+     {:earmark, "~> 0.2.0"},
+     {:timex, "~> 2.1.1"}]
   end
 end
