@@ -6,9 +6,12 @@ defmodule Podcaster.QuickLinkController do
   end
 
   def rss(conn, _params) do
+    # conn
+    # |> put_resp_content_type("text/xml")
+    # |> text(Podcaster.Rss.generate(Episode.all))
     conn
     |> put_resp_content_type("text/xml")
-    |> text(Podcaster.Rss.generate(Episode.all))
+    |> text(Podcaster.Rss.fetch)
   end
 
   def stitcher(conn, _params) do
