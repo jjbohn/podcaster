@@ -17,7 +17,7 @@ defmodule EpisodeTest do
   # end
 
   test "can be hydrated from JSON" do
-    assert %Episode{title: "Episode 1"} == Poison.decode!(~s({"title":"Episode 1"}), as: %Episode{})
+    assert %Episode{title: "Episode 1"} == Poison.decode!(~s({"title":"Episode 1"}), as: Episode)
   end
 
   test "all" do

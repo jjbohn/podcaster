@@ -9,8 +9,18 @@ defmodule Podcaster.Router do
     plug :put_secure_browser_headers
   end
 
+  pipeline :admin do
+    plug :put_layout, {Podcaster.LayoutView, :admin}
+  end
+
   pipeline :api do
     plug :accepts, ["json"]
+  end
+
+  scope "/admin", Podcaster.Admin do
+    pipe_through [:browser, :admin]
+
+    resources "/users", UserController
   end
 
   scope "/", Podcaster do
@@ -25,6 +35,8 @@ defmodule Podcaster.Router do
     get "/facebook", QuickLinkController, :facebook
 
     get "/:episode_id", EpisodeController, :show
+
+    resources "/users", UserController
   end
 
   # Other scopes may use custom stacks.

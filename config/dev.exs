@@ -35,8 +35,8 @@ config :phoenix, :stacktrace_depth, 20
 # Configure your database
 config :podcaster, Podcaster.Repo,
   adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
+  username: "jjbohn",
+  password: "",
   database: "podcaster_dev",
   hostname: "localhost",
   pool_size: 10

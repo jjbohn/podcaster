@@ -10,6 +10,7 @@ defmodule Podcaster do
       # Start the endpoint when the application starts
       supervisor(Podcaster.Endpoint, []),
       # Here you could define other workers and supervisors as children
+      supervisor(Podcaster.Repo, []),
       # worker(Podcaster.Worker, [arg1, arg2, arg3]),
     ]
 

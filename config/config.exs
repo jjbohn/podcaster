@@ -27,3 +27,9 @@ import_config "#{Mix.env}.exs"
 config :phoenix, :generators,
   migration: true,
   binary_id: false
+
+config :guardian, Guardian,
+  issuer: "Podcaster",
+  ttl: { 30, :days },
+  secret_key: "12345",
+  serializer: Podcaster.GuardianSerializer

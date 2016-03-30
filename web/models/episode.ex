@@ -1,4 +1,6 @@
 defmodule Episode do
+  @derive [Poison.Encoder]
+
   defstruct [
     :id,
     :description,
@@ -16,7 +18,7 @@ defmodule Episode do
 
   def all(api \\ Simplecast) do
     {:ok, response} = api.get("episodes.json")
-    {:ok, episodes} = Poison.decode(response.body, as: [%Episode{}])
+    {:ok, episodes} = Poison.decode(response.body, as: [Episode])
 
     episodes
   end
