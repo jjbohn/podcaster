@@ -2,7 +2,7 @@ defmodule Podcaster.Admin.UserControllerTest do
   use Podcaster.ConnCase
 
   alias Podcaster.User
-  @valid_attrs %{email: "some content"}
+  @valid_attrs %{email: "jjbohn@gmail.com"}
   @invalid_attrs %{}
 
   test "lists all entries on index", %{conn: conn} do

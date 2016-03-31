@@ -13,7 +13,7 @@ config :logger, level: :warn
 config :podcaster, Podcaster.Repo,
   adapter: Ecto.Adapters.Postgres,
   pool: Ecto.Adapters.SQL.Sandbox,
-  username: "jjbohn",
+  username: String.rstrip(elem(System.cmd("whoami", []), 0)),
   password: "",
   database: "podcaster_test",
   hostname: "localhost"
